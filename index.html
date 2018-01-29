@@ -1,0 +1,561 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<title>中物物流官网</title>
+<link rel="stylesheet" type="text/css" href="images/styles.css">
+<link rel="stylesheet" href="css/jdt.css">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/PicCarousel.js"></script>
+<script type="text/javascript" src="js/jquery.banner.js"></script>
+<script src='js/hhSwipe.js'></script>
+<script type="text/javascript" src="js/tab.js"></script>
+
+</head>
+
+<body>
+
+<div id="gray"></div>
+<div class="popup con_back" id="popup">
+
+	<div class="top_nav">
+		<div align="center">
+			<span>货物追踪</span>
+			<a class="guanbi"></a>
+		</div>
+	</div>
+	<div class="min">
+    	<p class="warning">错误提示信息</p>
+        <!--<select class="select_feedback">
+        	<option>订单号</option>
+        	<option>运单号</option>
+        	<option>需求单号</option>
+        </select><br>-->
+        <textarea class="textarea_text" placeholder="注：请输入需求单号/运单号/订单号进行查询"></textarea><br>
+        <input type="text" placeholder="输入验证码" class="input_feedback" style="width:80px;"><img src="images/yz.jpg"><a target="_self">看不清，刷新一下</a><br>
+        <input type="submit" value="提交" class="but_submit" onClick="window.location.href='Tracking.html';" ><input type="reset" value="重置" class="but_reset">
+    </div>
+	
+
+</div>
+
+
+<div class="top">
+	<div class="con_main">
+        <div class="top_l">您好！欢迎来到中物物流！</div>
+        <div class="top_r">客服电话：400-88888888</div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="head con_main">
+	<div class="logo">中物物流</div>
+    <div id="nav">
+    	<ul>
+        	<li class="on"><a href="index.html" target="">首 页</a></li>
+        	<li><a href="company.html" target="">公司概况</a></li>
+        	<li><a href="logistics.html" target="">物流信息</a></li>
+        	<li><a href="servie1.html" target="">业务介绍</a></li>
+        	<li><a href="products.html" target="">产品介绍</a></li>
+        	<li><a href="solutions.html" target="">解决方案</a></li>
+        	<li><a href="projects.html" target="">项目案例</a></li>
+        	<li><a href="aboutus.html" target="">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+<div id="banner">
+	
+	<div class="banner">
+        <ul class="banList">
+		<li class="active"><a href="#"><img src="images/banner_01.png"/></a></li>
+		<li><a href="#"><img src="images/banner_02.png"/></a></li>
+		<li><a href="#"><img src="images/banner_01.png"/></a></li>
+		<li><a href="#"><img src="images/banner_02.png"/></a></li>
+	</ul>
+	<div class="fomW">
+		<div class="jsNav">
+			<a href="javascript:;" class="trigger current"></a>
+			<a href="javascript:;" class="trigger"></a>
+			<a href="javascript:;" class="trigger"></a>
+			<a href="javascript:;" class="trigger"></a>
+		</div>
+	</div>
+    </div>
+</div>
+<div id="banner1">
+	<div class="scroll relative">
+	    <div class="scroll_box" id="scroll_img">
+        <ul class="scroll_wrap">
+          <li><a href="#"><img src="images/banner_02_pad.png" width="100%" /></a></li>
+          <li><a href="#"><img src="images/banner_01_pad.png" width="100%" /></a></li>
+          <li><a href="#"><img src="images/banner_02_pad.png" width="100%" /></a></li>
+        </ul>
+	    </div>
+      <span class="scroll_position_bg opacity6"></span>
+      <ul class="scroll_position" id='scroll_position'>
+          <li class="on"><a href="javascript:void(0);">1</a></li>
+          <li><a href="javascript:void(0);">2</a></li>
+          <li><a href="javascript:void(0);">3</a></li>
+      </ul>
+	  </div>
+</div>
+<div class="con_main">
+	<ul class="title_new division2">
+    	<li class="on" onClick="publicTab('line',1,2,'on','out')" id="line_1">实时货源</li>
+    	<li class="out" onClick="publicTab('line',2,2,'on','out')" id="line_2">实时车源</li>
+    </ul>
+    <div class="list_new" style="display:block;" id="con_line_1">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <td>收货方</td>
+                    <td>发货方</td>
+                    <td>货物类型</td>
+                    <td>发货地</td>
+                    <td>目的地</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>唐山*****有限公司</td>
+                    <td>天津****有限公司</td>
+                    <td>成品钢</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                </tr>
+                <tr class="bg1">
+                    <td>唐山*****有限公司</td>
+                    <td>天津****有限公司</td>
+                    <td>成品钢</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                </tr>
+                <tr>
+                    <td>唐山*****有限公司</td>
+                    <td>天津****有限公司</td>
+                    <td>成品钢</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                </tr>
+                <tr class="bg1">
+                    <td>唐山*****有限公司</td>
+                    <td>天津****有限公司</td>
+                    <td>成品钢</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                </tr>
+                <tr>
+                    <td>唐山*****有限公司</td>
+                    <td>天津****有限公司</td>
+                    <td>成品钢</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="logistics.html" class="more_list_new">查看更多</a>
+    </div>    
+    <div class="list_new" style="display:none;" id="con_line_2">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <td>车队</td>
+                    <td>车牌</td>
+                    <td>车型</td>
+                    <td>出发地</td>
+                    <td>目的地</td>
+                    <td>司机</td>
+                    <td>联系电话</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>唐山*****汽车总队</td>
+                    <td>冀*****</td>
+                    <td>挂车</td>
+                    <td>**乐亭县</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>赵**</td>
+                    <td>130********</td>
+                </tr>
+                <tr class="bg1">
+                    <td>唐山*****汽车总队</td>
+                    <td>冀*****</td>
+                    <td>挂车</td>
+                    <td>**乐亭县</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>赵**</td>
+                    <td>130********</td>
+                </tr>
+                <tr>
+                    <td>唐山*****汽车总队</td>
+                    <td>冀*****</td>
+                    <td>挂车</td>
+                    <td>**乐亭县</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>赵**</td>
+                    <td>130********</td>
+                </tr>
+                <tr class="bg1">
+                    <td>唐山*****汽车总队</td>
+                    <td>冀*****</td>
+                    <td>挂车</td>
+                    <td>**乐亭县</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>赵**</td>
+                    <td>130********</td>
+                </tr>
+                <tr>
+                    <td>唐山*****汽车总队</td>
+                    <td>冀*****</td>
+                    <td>挂车</td>
+                    <td>**乐亭县</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>赵**</td>
+                    <td>130********</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="logistics.html" class="more_list_new">查看更多</a>
+	</div>
+</div>
+<div class="con_main banner_small_index">
+	<a href="#" target="_self" class="top_l zz"><img src="images/img_banner01.png"></a>
+	<a href="join_in.html" target="_blank" class="top_r"><img src="images/img_banner02.png"></a>
+</div>
+<div class="con_main">
+	<ul class="title_new division3">
+    	<li class="on" onClick="publicTab('line01',1,2,'on','out')" id="line01_1">线路信息</li>
+    	<li class="out" onClick="publicTab('line01',2,3,'on','out')" id="line01_2">船期信息</li>
+    	<li class="out" onClick="publicTab('line01',3,3,'on','out')" id="line01_3">仓储信息</li>
+    </ul>
+    <div class="list_new" style="display:block;" id="con_line01_1">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <td>公司名称</td>
+                    <td>线路</td>
+                    <td>地址</td>
+                    <td>联系电话</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>中物物流有限公司</td>
+                    <td>唐山－北京</td>
+                    <td>唐山市曹妃甸工业区11+</td>
+                    <td>135********</td>
+                </tr>
+                <tr class="bg1">
+                    <td>中物物流有限公司</td>
+                    <td>唐山－北京</td>
+                    <td>唐山市曹妃甸工业区11+</td>
+                    <td>135********</td>
+                </tr>
+                <tr>
+                    <td>中物物流有限公司</td>
+                    <td>唐山－北京</td>
+                    <td>唐山市曹妃甸工业区11+</td>
+                    <td>135********</td>
+                </tr>
+                <tr class="bg1">
+                    <td>中物物流有限公司</td>
+                    <td>唐山－北京</td>
+                    <td>唐山市曹妃甸工业区11+</td>
+                    <td>135********</td>
+                </tr>
+                <tr>
+                    <td>中物物流有限公司</td>
+                    <td>唐山－北京</td>
+                    <td>唐山市曹妃甸工业区11+</td>
+                    <td>135********</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="logistics.html" class="more_list_new">查看更多</a>
+    </div>    
+    <div class="list_new" style="display:none;" id="con_line01_2">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <td>船运公司</td>
+                    <td>船号</td>
+                    <td>船型</td>
+                    <td>出发地</td>
+                    <td>目的地</td>
+                    <td>联系人</td>
+                    <td>联系电话</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>唐山*****船运公司</td>
+                    <td>XXXXXXX</td>
+                    <td>XXXXX</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>赵**</td>
+                    <td>130********</td>
+                </tr>
+                <tr class="bg1">
+                    <td>唐山*****船运公司</td>
+                    <td>XXXXXXX</td>
+                    <td>XXXXX</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>赵**</td>
+                    <td>130********</td>
+                </tr>
+                <tr>
+                    <td>唐山*****船运公司</td>
+                    <td>XXXXXXX</td>
+                    <td>XXXXX</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>赵**</td>
+                    <td>130********</td>
+                </tr>
+                <tr class="bg1">
+                    <td>唐山*****船运公司</td>
+                    <td>XXXXXXX</td>
+                    <td>XXXXX</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>赵**</td>
+                    <td>130********</td>
+                </tr>
+                <tr>
+                    <td>唐山*****船运公司</td>
+                    <td>XXXXXXX</td>
+                    <td>XXXXX</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>XXXXXXXX县XXX码头</td>
+                    <td>赵**</td>
+                    <td>130********</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="logistics.html" class="more_list_new">查看更多</a>
+    </div>    
+    <div class="list_new" style="display:none;" id="con_line01_3">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <td>所属地区</td>
+                    <td>地址</td>
+                    <td>仓储类型</td>
+                    <td>仓储面积(平米)</td>
+                    <td>闲置面积(平米)</td>
+                    <td>联系电话</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>唐山市丰南</td>
+                    <td>唐山市丰南区10号</td>
+                    <td>普通仓库</td>
+                    <td>1000</td>
+                    <td>500</td>
+                    <td>130********</td>
+                </tr>
+                <tr class="bg1">
+                    <td>唐山市丰南</td>
+                    <td>唐山市丰南区10号</td>
+                    <td>普通仓库</td>
+                    <td>1000</td>
+                    <td>500</td>
+                    <td>130********</td>
+                </tr>
+                <tr>
+                    <td>唐山市丰南</td>
+                    <td>唐山市丰南区10号</td>
+                    <td>普通仓库</td>
+                    <td>1000</td>
+                    <td>500</td>
+                    <td>130********</td>
+                </tr>
+                <tr class="bg1">
+                    <td>唐山市丰南</td>
+                    <td>唐山市丰南区10号</td>
+                    <td>普通仓库</td>
+                    <td>1000</td>
+                    <td>500</td>
+                    <td>130********</td>
+                </tr>
+                <tr>
+                    <td>唐山市丰南</td>
+                    <td>唐山市丰南区10号</td>
+                    <td>普通仓库</td>
+                    <td>1000</td>
+                    <td>500</td>
+                    <td>130********</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="logistics.html" class="more_list_new">查看更多</a>
+	</div>
+</div>
+<div id="solution" class="con_main">
+	<h1 class="h1_index">解决方案</h1>
+	<ul>
+    	<li>
+        	<a href="servie4.html" target="_blank">
+            	<img src="images/jjfa1.png">
+                <h2>物流管理</h2>
+                <p>为车主/司机、物流/货代、货主/企业提供智能预警、异常监控、KPI绩效、运营分析。</p>
+            </a>
+        </li>
+    	<li>
+        	<a href="servie5.html" target="_blank">
+            	<img src="images/jjfa2.png">
+                <h2>车辆管理</h2>
+                <p>聚焦物流行业的关键需求，利用车联网技术，打造一个面向物流行业车队的管理平台。</p>
+            </a>
+        </li>
+    	<li>
+        	<a href="servie7.html" target="_blank">
+            	<img src="images/jjfa3.png">
+                <h2>仓储管理</h2>
+                <p>结合RFID技术，基于视频监控，提供数据采集、信息处理，以及货物安全、操作流程、仓库环境监控、安全保障监控等。</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="con_main">
+	<h1 class="h1_index">业务介绍</h1>
+    <div class="container">
+        <div class="poster-main A_Demo">
+            <div class="poster-btn poster-prev-btn"></div>
+            <ul class="poster-list">
+                <li class="poster-item"><a href="#"><img src="images/yw1.png" width="100%" ></a></li>
+                <li class="poster-item"><a href="#"><img src="images/yw2.png" width="100%" ></a></li>
+                <li class="poster-item"><a href="#"><img src="images/yw3.png" width="100%" ></a></li>
+                <li class="poster-item"><a href="#"><img src="images/yw4.png" width="100%" ></a></li>
+                <li class="poster-item"><a href="#"><img src="images/yw3.png" width="100%" ></a></li>
+                <li class="poster-item"><a href="#"><img src="images/yw4.png" width="100%" ></a></li>
+                <li class="poster-item"><a href="#"><img src="images/yw4.png" width="100%" ></a></li>
+                <li class="poster-item"><a href="#"><img src="images/yw4.png" width="100%" ></a></li>
+                <li class="poster-item"><a href="#"><img src="images/yw4.png" width="100%" ></a></li>
+            </ul>
+            <div class="poster-btn poster-next-btn"></div>
+        </div>    
+        
+        
+        
+    </div>
+    <div class="container0">
+    	<ul>
+            <li><a href="#"><img src="images/yw1.png" width="100%" ></a></li>
+            <li><a href="#"><img src="images/yw2.png" width="100%" ></a></li>
+            <li><a href="#"><img src="images/yw3.png" width="100%" ></a></li>
+            <li><a href="#"><img src="images/yw4.png" width="100%" ></a></li>
+            <li><a href="#"><img src="images/yw1.png" width="100%" ></a></li>
+            <li><a href="#"><img src="images/yw2.png" width="100%" ></a></li>
+            <li><a href="#"><img src="images/yw3.png" width="100%" ></a></li>
+        </ul>
+    </div>
+</div>
+<div id="aboutus" class="con_main">
+	<h1 class="h1_index">公司简介</h1>
+    <div class="con_main">
+        <img class="pic_aboutus " src="images/about.png" style=" float:right;">
+    	<p>中物（北京）物流信息服务有限公司（简称“中物物流网”)， 成立于2015年4月，注册资金3000万元，智能物流供应链信息化解决方案服务提供商。
+</p>
+    	<p>中物物流网致力于物流行业，以物流运输全生命周期服务为导向，以物流价值链为核心，依托汽车物联网运营管理平台及车载终端技术，打造面向物流管理、运营、服务及商业增值一体化的服务平台。团队由知名IT企业、车企及物流行业精英建立并运营。 中物物流网拥有IT专业技术队伍，自主研发获得多项专利、软件著作权。
+</p>
+    </div>
+</div>
+<div class="footer">某某省某某市某某路108号某某大厦18F&nbsp;&nbsp;&nbsp;&nbsp;电话: 0123-88888888&nbsp;&nbsp;&nbsp;&nbsp;传真: 0123-88888888</div>
+</body>
+<script>
+        
+//$(".A_Demo").PicCarousel("init");
+$(".A_Demo").PicCarousel({
+"width":940,		
+"height":342,		
+"posterWidth":520,	
+"posterHeight":342,
+"scale":0.9,		
+"speed":1000,	
+"autoPlay":true,	
+"delay":1500,	
+//"verticalAlign":"top"	
+});
+$(function(){
+	$(".banner").swBanner();
+});
+
+</script>
+<script>
+var slider = Swipe(document.getElementById('scroll_img'), {
+	auto: 3000,
+	continuous: true,
+	callback: function(pos) {
+		var i = bullets.length;
+		while (i--) {
+			bullets[i].className = ' ';
+		}
+		bullets[pos].className = 'on';
+	}
+});
+var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+$(function(){
+	$('.scroll_position_bg').css({
+		width:$('#scroll_position').width()
+	});
+});
+</script>
+
+<script>
+$(".zz").click(function(){
+	$("#gray").show();
+	$("#popup").show();//查找ID为price的DIV show()显示#gray
+	tc_center();
+});
+//点击关闭按钮
+$("a.guanbi").click(function(){
+	$("#gray").hide();
+	$("#popup").hide();//查找ID为popup的DIV hide()隐藏
+	
+})
+
+//窗口水平居中
+$(window).resize(function(){
+	tc_center();
+});
+
+function tc_center(){
+	var _top=($(window).height()-$(".popup").height())/2;
+	var _left=($(window).width()-$(".popup").width())/2;
+	
+	$(".popup").css({top:_top,left:_left});
+}	
+$(document).ready(function(){ 
+
+	$(".top_nav").mousedown(function(e){ 
+		$(this).css("cursor","move");//改变鼠标指针的形状 
+		var offset = $(this).offset();//DIV在页面的位置 
+		var x = e.pageX - offset.left;//获得鼠标指针离DIV元素左边界的距离 
+		var y = e.pageY - offset.top;//获得鼠标指针离DIV元素上边界的距离 
+		$(document).bind("mousemove",function(ev){ //绑定鼠标的移动事件，因为光标在DIV元素外面也要有效果，所以要用doucment的事件，而不用DIV元素的事件 
+		
+			$(".popup").stop();//加上这个之后 
+			
+			var _x = ev.pageX - x;//获得X轴方向移动的值 
+			var _y = ev.pageY - y;//获得Y轴方向移动的值 
+		
+			$(".popup").animate({left:_x+"px",top:_y+"px"},10); 
+		}); 
+
+	}); 
+
+	$(document).mouseup(function() { 
+		$(".popup").css("cursor","default"); 
+		$(this).unbind("mousemove"); 
+	});
+}) 
+</script>
+</html>
